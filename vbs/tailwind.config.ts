@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss"
+import tailwindcssAnimate from "tailwindcss-animate"
 export default {
   darkMode: ["class"],
   content: ["./app/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}"],
@@ -18,5 +19,5 @@ export default {
     borderRadius: { lg: "var(--radius)", md: "calc(var(--radius) - 2px)", sm: "calc(var(--radius) - 4px)" },
     boxShadow: { soft: "0 1px 2px rgba(80,60,160,.04), 0 8px 24px -12px rgba(80,60,160,.12)" },
   } },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [tailwindcssAnimate],
 } satisfies Config
